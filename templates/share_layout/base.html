@@ -39,7 +39,8 @@
         <link rel='stylesheet' id='twentytwelve-ie-css'  href='{% static 'blog/css/ie.css' %}' type='text/css' media='all' />
         <![endif]-->
         <link rel="stylesheet" href="{% static 'pygments/default.css' %}"/>
-        <link rel="stylesheet" href="{% static 'blog/css/nprogress.css' %}">
+        <link rel="stylesheet" href="{% static 'blog/css/nprogress.css' %}"/>
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}"/>
         {% block compress_css %}
         {% endblock %}
     {% endcompress %}
@@ -49,7 +50,8 @@
 <div id="page" class="hfeed site">
     <header id="masthead" class="site-header" role="banner">
         <hgroup>
-            <h1 class="site-title"><a href="/" title="{{ SITE_NAME }}" rel="home">{{ SITE_NAME }}</a>
+            <h1 class="site-title">
+                <a href="/" title="{{ SITE_NAME }}" rel="home">{{ SITE_NAME }}</a>
             </h1>
             <h2 class="site-description">{{ SITE_DESCRIPTION }}</h2>
         </hgroup>

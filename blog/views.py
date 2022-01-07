@@ -1,6 +1,5 @@
 import datetime
 import logging
-# Create your views here.
 import os
 import uuid
 
@@ -73,10 +72,10 @@ class ArticleListView(ListView):
             return article_list
 
     def get_queryset(self):
-        '''
+        """
         重写默认，从缓存获取数据
         :return:
-        '''
+        """
         key = self.get_queryset_cache_key()
         value = self.get_queryset_from_cache(key)
         return value
@@ -87,9 +86,9 @@ class ArticleListView(ListView):
 
 
 class IndexView(ArticleListView):
-    '''
+    """
     首页
-    '''
+    """
     # 友情链接类型
     link_type = LinkShowType.I
 
@@ -103,9 +102,9 @@ class IndexView(ArticleListView):
 
 
 class ArticleDetailView(DetailView):
-    '''
+    """
     文章详情页面
-    '''
+    """
     template_name = 'blog/article_detail.html'
     model = Article
     pk_url_kwarg = 'article_id'

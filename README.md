@@ -1,11 +1,12 @@
 # DjangoBlog
 
-🌍
-*[English](/docs/README-en.md) ∙ [简体中文](README.md)*
+[//]: # (🌍)
+
+[//]: # (*[English]&#40;/docs/README-en.md&#41; ∙ [简体中文]&#40;README.md&#41;*)
 
 基于`python3.8`和`Django3.0`的博客。   
 
-[![Django CI](https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml/badge.svg)](https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml) [![CodeQL](https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml) [![codecov](https://codecov.io/gh/liangliangyy/DjangoBlog/branch/master/graph/badge.svg)](https://codecov.io/gh/liangliangyy/DjangoBlog)  [![license](https://img.shields.io/github/license/liangliangyy/djangoblog.svg)]()  
+[//]: # ([![Django CI]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml/badge.svg&#41;]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml&#41; [![CodeQL]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml/badge.svg&#41;]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml&#41; [![codecov]&#40;https://codecov.io/gh/liangliangyy/DjangoBlog/branch/master/graph/badge.svg&#41;]&#40;https://codecov.io/gh/liangliangyy/DjangoBlog&#41;  [![license]&#40;https://img.shields.io/github/license/liangliangyy/djangoblog.svg&#41;]&#40;&#41;  )
 
 ## 主要功能：
 - 文章，页面，分类目录，标签的添加，删除，编辑等。文章及页面支持`Markdown`，支持代码高亮。

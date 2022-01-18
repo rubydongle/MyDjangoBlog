@@ -6,7 +6,7 @@
 A blog system based on `python3.8` and `Django3.0`.
 
 
-[![Django CI](https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml/badge.svg)](https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml) [![CodeQL](https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml) [![codecov](https://codecov.io/gh/liangliangyy/DjangoBlog/branch/master/graph/badge.svg)](https://codecov.io/gh/liangliangyy/DjangoBlog) [![license](https://img.shields.io/github/license/liangliangyy/djangoblog.svg)]()  
+[//]: # ([![Django CI]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml/badge.svg&#41;]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml&#41; [![CodeQL]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml/badge.svg&#41;]&#40;https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml&#41; [![codecov]&#40;https://codecov.io/gh/liangliangyy/DjangoBlog/branch/master/graph/badge.svg&#41;]&#40;https://codecov.io/gh/liangliangyy/DjangoBlog&#41; [![license]&#40;https://img.shields.io/github/license/liangliangyy/djangoblog.svg&#41;]&#40;&#41;  )
 
 
 ## Main Features:

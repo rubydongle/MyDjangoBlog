@@ -1,0 +1,52 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header navbar-left">
+        <!-- The mobile navbar-toggle button can be safely removed since you do not need it in a non-responsive implementation -->
+        <img class="navbar-brand" src="https://iconutopia.com/wp-content/uploads/2016/06/icon-design-guide.png">
+        <a class="navbar-brand" href="#">
+          <b>{{ SITE_NAME }}</b>
+          {{ SITE_DESCRIPTION }}
+        </a>
+      </div>
+      <!-- Note that the .navbar-collapse and .collapse classes have been removed from the #navbar -->
+      <div id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">首页</a></li>
+            {% load blog_tags %}
+            {% query nav_category_list parent_category=None as root_categorys %}
+            {% for node in root_categorys %}
+                {% include 'share_layout/nav_node_bs.html' %}
+            {% endfor %}
+            {% if nav_pages %}
+                {% for node in nav_pages %}
+                    <li id="menu-item-{{ node.pk }}"
+                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-{{ node.pk }}">
+                        <a href="{{ node.get_absolute_url }}">{{ node.title }}</a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+          <li>
+                <a href="{% url "blog:archives" %}">文章归档</a>
+          </li>
+          <li><a href="/about.html">关于</a></li>
+          <li><a href="/contact.html">联系我们</a></li>
+        </ul>
+        <!-- <form class="navbar-form navbar-left"> -->
+        <form class="navbar-form navbar-right searchform" id="searchform" role="search" method="get" action="/search">
+          <div class="form-group">
+            <input type="text" class="form-control" value="" name="q" id="q" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default" id="searchsubmit">搜索</button>
+        </form>
+
+
+        <!-- <form role="search" method="get" id="searchform" class="searchform" action="/search">
+            <div>
+                <input type="text" value="" name="q" id="q" placeholder="Search"/>
+            </div>
+            <button class="btn btn-primary" type="submit" id="searchsubmit">搜索</button>
+        </form> -->
+
+      </div><!--/.nav-collapse -->
+    </div>
+</nav>

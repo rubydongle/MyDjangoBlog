@@ -47,7 +47,13 @@
 </head>
 
 <body class="home blog custom-font-enabled">
+    <!-- header -->
+    {% cache 36000 nav %}
+      {% include 'share_layout/nav_bs.html' %}
+    {% endcache %}
+
 <div id="page" class="hfeed site">
+
     <header id="masthead" class="site-header" role="banner">
         <hgroup>
             <h1 class="site-title">
@@ -80,6 +86,7 @@
     {% compress js %}
         <script type="text/javascript" src="{% static 'blog/js/jquery-3.6.0.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'blog/js/nprogress.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assets/js/bootstrap.min.js' %}"></script>
         <script src="{% static 'blog/js/blog.js' %}" type="application/javascript"></script>
         <script src="{% static 'blog/js/navigation.js' %}" type="application/javascript"></script>
         {% block compress_js %}

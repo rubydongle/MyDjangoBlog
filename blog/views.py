@@ -359,3 +359,10 @@ def permission_denied_view(
     return render(
         request, template_name, {
             'message': '哎呀，您没有权限访问此页面，请点击首页看看别的？', 'statuscode': '403'}, status=403)
+
+def about_view(
+        request,
+        template_name='blog/about_page.html'):
+    return render(
+        request, template_name, {
+            'message': 'This is about page'})

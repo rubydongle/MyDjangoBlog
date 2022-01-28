@@ -52,6 +52,11 @@ urlpatterns = [
         views.LinkListView.as_view(),
         name='links'),
     path(
+        'about.html',
+        views.about_view,
+        name='about'
+    ),
+    path(
         r'upload',
         views.fileupload,
         name='upload'),
